@@ -1,0 +1,38 @@
+{
+  "name": "fullstack-challenge-backend",
+  "version": "1.0.0",
+  "description": "API REST para procesamiento de archivos CSV",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha test/**/*.test.js --timeout 10000 --exit",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "csv"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "nodemon": "^3.0.1",
+    "standard": "^17.1.0"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}
